@@ -1,11 +1,9 @@
-// Kelas Kendaraan (parent)
 class Kendaraan {
     private String noPlat;
     private String merk;
     private String model;
     private int tahun;
 
-    // Constructor dengan parameter
     public Kendaraan(String noPlat, String merk, String model, int tahun) {
         this.noPlat = noPlat;
         this.merk = merk;
@@ -13,7 +11,6 @@ class Kendaraan {
         this.tahun = tahun;
     }
 
-    // Constructor kosong
     public Kendaraan() {
         this.noPlat = "";
         this.merk = "";
@@ -21,7 +18,6 @@ class Kendaraan {
         this.tahun = 0;
     }
 
-    // Method yang akan di-override
     public String getJenisKendaraan() {
         return "Kendaraan";
     }
@@ -31,7 +27,6 @@ class Kendaraan {
                 getJenisKendaraan(), noPlat, merk, model, tahun);
     }
 
-    // Getter dan Setter
     public String getNoPlat() { return noPlat; }
     public void setNoPlat(String noPlat) { this.noPlat = noPlat; }
     public String getMerk() { return merk; }
