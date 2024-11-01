@@ -1,15 +1,14 @@
 class Motor extends Kendaraan {
     private String jenisTransmisi;
 
-    // Constructor dengan parameter
     public Motor(String noPlat, String merk, String model, int tahun, String jenisTransmisi) {
         super(noPlat, merk, model, tahun);
         this.jenisTransmisi = jenisTransmisi;
     }
 
-    // Constructor kosong
+    
     public Motor() {
-        super();  // Memanggil constructor kosong dari Kendaraan
+        super();  
         this.jenisTransmisi = "";
     }
 
@@ -18,7 +17,7 @@ class Motor extends Kendaraan {
         return "Motor";
     }
 
-    // Getter dan Setter untuk jenisTransmisi
+
     public String getJenisTransmisi() {
         return jenisTransmisi;
     }
