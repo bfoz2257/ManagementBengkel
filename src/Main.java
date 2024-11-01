@@ -15,7 +15,7 @@ public class Main {
         do {
             tampilkanMenu();
             pilihan = scanner.nextInt();
-            scanner.nextLine(); // Membersihkan buffer
+            scanner.nextLine(); 
 
             switch (pilihan) {
                 case 1:
@@ -85,7 +85,7 @@ public class Main {
             System.out.println("2. Motor");
             System.out.print("Pilih (1/2): ");
             int jenisKendaraan = scanner.nextInt();
-            scanner.nextLine(); // Membersihkan buffer
+            scanner.nextLine(); 
 
             System.out.print("No. Plat: ");
             String noPlat = scanner.nextLine();
@@ -95,7 +95,7 @@ public class Main {
             String model = scanner.nextLine();
             System.out.print("Tahun: ");
             int tahun = scanner.nextInt();
-            scanner.nextLine(); // Membersihkan buffer
+            scanner.nextLine(); 
 
             if (jenisKendaraan == 1) {
                 System.out.print("Jumlah Pintu: ");
