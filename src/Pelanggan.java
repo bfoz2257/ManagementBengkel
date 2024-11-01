@@ -1,14 +1,13 @@
 import java.util.ArrayList;
 
 class Pelanggan {
-    // Gunakan huruf kecil untuk nama variabel
+    
     private String id;
     private String nama;
     private String noTelp;
     private String alamat;
     private ArrayList<Kendaraan> kendaraanList;
 
-    // Constructor dengan parameter
     public Pelanggan(String id, String nama, String noTelp, String alamat) {
         this.id = id;
         this.nama = nama;
@@ -17,7 +16,6 @@ class Pelanggan {
         this.kendaraanList = new ArrayList<>();
     }
 
-    // Constructor kosong
     public Pelanggan() {
         this.id = "";
         this.nama = "";
@@ -32,7 +30,6 @@ class Pelanggan {
         }
     }
 
-    // Getter dan Setter
     public String getId() {
         return id;
     }
