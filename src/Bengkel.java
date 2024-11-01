@@ -5,21 +5,18 @@ class Bengkel {
     private ArrayList<Pelanggan> pelangganList;
     private ArrayList<Servis> servisList;
 
-    // Constructor dengan parameter
     public Bengkel(String nama) {
         this.nama = nama;
         this.pelangganList = new ArrayList<>();
         this.servisList = new ArrayList<>();
     }
 
-    // Constructor kosong
     public Bengkel() {
         this.nama = "";
         this.pelangganList = new ArrayList<>();
         this.servisList = new ArrayList<>();
     }
 
-    // Getter dan Setter
     public String getNama() {
         return nama;
     }
@@ -36,17 +33,14 @@ class Bengkel {
         return servisList;
     }
 
-    // Method untuk menambah pelanggan
     public void tambahPelanggan(Pelanggan pelanggan) {
         pelangganList.add(pelanggan);
     }
 
-    // Method untuk menambah servis
     public void tambahServis(Servis servis) {
         servisList.add(servis);
     }
 
-    // Method untuk mencari pelanggan berdasarkan ID
     public Pelanggan cariPelanggan(String id) {
         for (Pelanggan p : pelangganList) {
             if (p.getId().equals(id)) {
@@ -56,7 +50,6 @@ class Bengkel {
         return null;
     }
 
-    // menampilkan semua pelanggan
     public void tampilkanSemuaPelanggan() {
         if (pelangganList.isEmpty()) {
             System.out.println("Belum ada data pelanggan!");
@@ -69,7 +62,6 @@ class Bengkel {
         }
     }
 
-    // menampilkan semua servis
     public void tampilkanSemuaServis() {
         if (servisList.isEmpty()) {
             System.out.println("Belum ada data servis!");
@@ -82,7 +74,6 @@ class Bengkel {
         }
     }
 
-    // menampilkan servis per pelanggan
     public void tampilkanServisPelanggan(Pelanggan pelanggan) {
         if (pelanggan == null || pelanggan.getKendaraanList().isEmpty()) {
             System.out.println("Pelanggan tidak ditemukan atau tidak memiliki kendaraan!");
@@ -93,7 +84,7 @@ class Bengkel {
         boolean adaServis = false;
 
         for (Servis s : servisList) {
-            // Cek untuk setiap kendaraan yang dimiliki pelanggan
+            
             for (Kendaraan k : pelanggan.getKendaraanList()) {
                 if (s.getKendaraan().getNoPlat().equals(k.getNoPlat())) {
                     s.tampilkanInfo();
