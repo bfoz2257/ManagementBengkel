@@ -5,7 +5,6 @@ class Servis {
     private Double biaya;
     private String tanggal;
 
-    // Constructor dengan parameter
     public Servis(String id, Kendaraan kendaraan, String jenisServis, Double biaya, String tanggal) {
         this.id = id;
         this.kendaraan = kendaraan;
@@ -14,7 +13,6 @@ class Servis {
         this.tanggal = tanggal;
     }
 
-    // Constructor kosong
     public Servis() {
         this.id = "";
         this.kendaraan = null;
@@ -23,7 +21,6 @@ class Servis {
         this.tanggal = "";
     }
 
-    // Getter dan Setter
     public String getId() {
         return id;
     }
@@ -64,7 +61,6 @@ class Servis {
         this.tanggal = tanggal;
     }
 
-    // Method untuk menampilkan informasi servis
     public void tampilkanInfo() {
         System.out.println("=== Info Servis ===");
         System.out.println("ID: " + id);
